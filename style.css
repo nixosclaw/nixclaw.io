@@ -1,0 +1,254 @@
+:root {
+    --bg-color: #0f0f12;
+    --text-color: #e0e0e0;
+    --accent-color: #00d4ff;
+    --accent-hover: #00a8cc;
+    --card-bg: #1a1a20;
+    --header-bg: #0a0a0c;
+    --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-hover);
+}
+
+header {
+    background-color: var(--header-bg);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #222;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    font-family: var(--font-mono);
+}
+
+nav a {
+    margin-left: 20px;
+    color: var(--text-color);
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+.cta-button {
+    background-color: var(--accent-color);
+    color: #000 !important;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: var(--accent-hover);
+}
+
+section {
+    padding: 80px 0;
+}
+
+h1, h2, h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#hero {
+    text-align: center;
+    padding: 120px 0;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #aaa;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.primary-button {
+    background-color: var(--accent-color);
+    color: #000 !important;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.primary-button:hover {
+    background-color: var(--accent-hover);
+}
+
+.secondary-button {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color) !important;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.secondary-button:hover {
+    background-color: rgba(0, 212, 255, 0.1);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #aaa;
+}
+
+#about {
+    background-color: var(--header-bg);
+    text-align: center;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 1.1rem;
+    color: #aaa;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #aaa;
+}
+
+.email-link {
+    margin-top: 20px;
+    font-size: 1rem !important;
+}
+
+footer {
+    background-color: var(--header-bg);
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid #222;
+    margin-top: 40px;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    margin: 0 15px;
+    color: #aaa;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+}
+
+footer p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    nav a {
+        margin: 0;
+    }
+}
