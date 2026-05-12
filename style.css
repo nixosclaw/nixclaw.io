@@ -200,30 +200,47 @@ h2 {
     font-size: 1rem !important;
 }
 
-footer {
-    background-color: var(--header-bg);
-    padding: 40px 0;
-    text-align: center;
-    border-top: 1px solid #222;
-    margin-top: 40px;
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
 }
 
-.footer-links {
+.form-group {
     margin-bottom: 20px;
 }
 
-.footer-links a {
-    margin: 0 15px;
-    color: #aaa;
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #fff;
+    font-weight: bold;
 }
 
-.footer-links a:hover {
-    color: var(--accent-color);
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a1a20;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    font-family: var(--font-main);
+    transition: border-color 0.3s ease;
 }
 
-footer p {
-    color: #666;
-    font-size: 0.9rem;
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.contact-form button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 @media (max-width: 768px) {

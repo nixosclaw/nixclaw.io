@@ -44,6 +44,10 @@
                     <p>For sensitive business data, we deploy and optimize local LLMs on your hardware. Full data sovereignty, compliance, and privacy without relying on third-party cloud providers.</p>
                 </div>
                 <div class="card">
+                    <h3>MicroVM Isolation & Sandboxing</h3>
+                    <p>Run untrusted AI agents and automated code execution in isolated, ephemeral microVMs. Our zero-trust architecture ensures your core infrastructure remains secure even if an agent is compromised.</p>
+                </div>
+                <div class="card">
                     <h3>Scalable Infrastructure</h3>
                     <p>Bulletproof, reproducible environments using NixOS. We build the underlying systems that ensure your AI tools and applications scale reliably as your business grows.</p>
                 </div>
@@ -66,9 +70,27 @@
     <section id="contact">
         <div class="container">
             <h2>Get in Touch</h2>
-            <p>Ready to upscale your business with AI? Book a free 30-minute consultation to discuss your needs.</p>
-            <a href="https://calendly.com/your-link-here" target="_blank" class="primary-button">Schedule Consultation</a>
-            <p class="email-link">Or email: <a href="mailto:contact@nixclaw.io">contact@nixclaw.io</a></p>
+            <p>Ready to upscale your business with AI? Fill out the form below to book your free 30-minute consultation.</p>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">Company Name</label>
+                    <input type="text" id="company" name="company">
+                </div>
+                <div class="form-group">
+                    <label for="challenge">What's your biggest AI challenge right now?</label>
+                    <textarea id="challenge" name="challenge" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="primary-button">Request Consultation</button>
+            </form>
+            <p class="email-link">Prefer email? <a href="mailto:contact@nixclaw.io">contact@nixclaw.io</a></p>
         </div>
     </section>
 
