@@ -363,13 +363,13 @@ footer {
 }
 
 footer p {
-    color: #666;
+    color: #999;
     font-size: 0.9rem;
 }
 
 .attribution {
     font-size: 0.75rem !important;
-    color: #555;
+    color: #777;
     margin-top: 8px;
 }
 

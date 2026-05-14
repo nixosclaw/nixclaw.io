@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nixclaw.io/sitemap.xml
