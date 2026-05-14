@@ -58,6 +58,21 @@ header .container {
     font-weight: bold;
     color: #fff;
     font-family: var(--font-mono);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    width: 36px;
+    height: 36px;
+}
+
+.hero-logo {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 30px;
+    display: block;
 }
 
 nav a {
@@ -276,6 +291,12 @@ footer {
 footer p {
     color: #666;
     font-size: 0.9rem;
+}
+
+.attribution {
+    font-size: 0.75rem !important;
+    color: #555;
+    margin-top: 8px;
 }
 
 @media (max-width: 768px) {
